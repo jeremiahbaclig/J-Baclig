@@ -10,7 +10,7 @@
     
     <link href="/portfolio/styles.css" rel="stylesheet" type="text/css" />
 </head>
-<body>
+<body onload="brython()">
     <header>
         <div class="top">
             <div class="media/name-logo">
@@ -232,10 +232,6 @@
                         window.close()
                         continue
 
-                    # if values['DAILY'] is True and values['WEEKLY'] is True:
-                    #     sg.Popup("ERROR: Choose only one.")
-                    #     window.close()
-                    #     continue
                     if event == 'Enter' or event == 'Daily' or event == 'Weekly':
                         window.close()
                         if values['DAILY'] is True:
