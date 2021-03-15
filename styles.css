@@ -338,7 +338,7 @@ nav ul li a:hover{
         color:black;
         background: none;
         font-weight: bolder;
-        mix-blend-mode: multiply;
+        mix-blend-mode: luminosity;
 filter: invert(0.9);
     }
 
