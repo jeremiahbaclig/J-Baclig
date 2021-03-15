@@ -230,14 +230,14 @@ nav ul li a:hover{
 #projects #table1 {
     display: inline-flexbox;
     filter: invert(0.9);
-    mix-blend-mode: saturation;
+    mix-blend-mode: luminosity;
     text-align: center;
 }
 
 #projects #table2 {
     display: inline-flexbox;
-    filter: invert(0.9);
-    mix-blend-mode: saturation;
+    filter: invert(0);
+    mix-blend-mode: darken;
     text-align: center;
 }
 
