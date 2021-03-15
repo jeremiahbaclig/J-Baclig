@@ -4,8 +4,15 @@
     font-family: sans-serif;
 }
 
+@media (prefers-reduced-motion) {
+	html {
+		scroll-behavior: auto;
+	}
+}
+
 html{
     overflow-x: auto;
+    scroll-behavior: smooth;
 }
 
 body{
@@ -35,16 +42,18 @@ body{
 }
 
 .logo{
-    width: 25%;
+    width: 35%;
     cursor: pointer;
-    margin: 20px 20px 0;
+    margin: 20px 25px 0;
+    mix-blend-mode: multiply;
+    filter: invert(0.75);
 }
 
 .menu-icon{
-    width: 50px;
+    width: 40px;
     cursor: pointer;
     display: none;
-    margin: 10px 10px;
+    margin: 20px 15px;
 }
 
 nav{
@@ -69,7 +78,6 @@ nav ul li a{
     position: -webkit-sticky; /* Safari */
     position: sticky;
     top: 0;
-    scroll-behavior: smooth;
 }
 
 nav ul li a:hover{
@@ -103,7 +111,7 @@ nav ul li a:hover{
 
 .col-1 p{
     font-size: 16px;
-    color: #b7b7b7;
+    color: #838383;
     font-weight: 100;
     margin-top: 10px;
 }
@@ -111,11 +119,11 @@ nav ul li a:hover{
 .col-1 #name::after{
     content: '';
     width: 10px;
-    height: 64%;
+    height: 11vh;
     background: linear-gradient(#7fffd4, #279e5cb2);
     position: absolute;
-    left: -3vw;
-    top: 11px;
+    left: -4vw;
+    top: 1vh;
 }
 
 .col-2{
@@ -128,18 +136,8 @@ nav ul li a:hover{
 .col-2 h2{
     font-size: 54px;
     color:rgba(0, 0, 0, 0.705);
-    margin-left: 65vw;
-}
-
-.col-2 h2::after{
-    content: '';
-    width: 10px;
-    height: 18%;
-    background: linear-gradient(#7fffd4, #279e5cb2);
-    position: absolute;
-    top: 30px;
-    margin-left: 15px;
-    z-index: 2;
+    margin-left: 60vw;
+    padding-bottom: 5vh;
 }
 
 .col-2 h3 {
@@ -147,7 +145,6 @@ nav ul li a:hover{
     color: #707070;
     font-weight: 100;
     margin: 8vh 18vw 10px;
-
 }
 
 .col-2 p{
@@ -158,13 +155,25 @@ nav ul li a:hover{
 }
 
 #about {
-    margin-top: 3vh;
+    margin-top: 6vh;
     margin-bottom: 15vh;
+}
+
+.col-2 #about h2::after{
+    content: '';
+    width: 10px;
+    height: 9vh;
+    background: linear-gradient(#7fffd4, #279e5cb2);
+    position: absolute;
+    top: 6vh;
+    margin-left: 3vw;
+    z-index: 2;
 }
 
 .col-2 .headshot{
     width: 90%;
     border-radius: 50%;
+    margin-bottom: 12vh;
 }
 
 .color-box{
@@ -177,6 +186,7 @@ nav ul li a:hover{
     width: 80%;
     z-index: -1;
     transform: translateX(150px);
+    margin-bottom: 12vh;
 }
 
 .about-page{
@@ -192,11 +202,11 @@ nav ul li a:hover{
 .col-1 #resume::after{
     content: '';
     width: 10px;
-    height: 12%;
+    height: 9vh;
     background: linear-gradient(#7fffd4, #279e5cb2);
     position: absolute;
-    left: 5vw;
-    top: 11px;
+    left: 4vw;
+    top: 0vh;
 }
 
 .resume-page{
@@ -229,6 +239,17 @@ nav ul li a:hover{
     text-align: center;
 }
 
+.col-2 #projects h2::after{
+    content: '';
+    width: 10px;
+    height: 10vh;
+    background: linear-gradient(#7fffd4, #279e5cb2);
+    position: absolute;
+    top: 0vh;
+    margin-left: 3vw;
+    z-index: 2;
+}
+
 #contact h2{
     color:rgba(0, 0, 0, 0.705);
     margin-left: 8vw;
@@ -238,11 +259,11 @@ nav ul li a:hover{
 .col-1 #contact::after{
     content: '';
     width: 10px;
-    height: 14%;
+    height: 10vh;
     background: linear-gradient(#7fffd4, #279e5cb2);
     position: absolute;
     left: 5vw;
-    top: 11px;
+    top: 0vh;
 }
 
 .contact-page{
@@ -318,6 +339,7 @@ nav ul li a:hover{
 
     .col-1{
         flex-basis: 100%;
+        margin-top: -10vh;
     }
 
     .col-1 h2{
@@ -326,6 +348,10 @@ nav ul li a:hover{
 
     .col-1 h3{
         font-size: 15px;
+    }
+
+    .col-1 p{
+        mix-blend-mode: multiply;
     }
 
     .col-2{
@@ -345,17 +371,35 @@ nav ul li a:hover{
         width: 77%;
     }
 
+    .col-2 img {
+        padding-top: 8vh;
+    }
+
     .color-box{
         transform: translateX(75px);
+        margin-top: 5vh;
     }
     
+    .col-1 #name::after{
+        top: 0px;
+        left: -5vw;
+    }
+
+    .col-2 #projects h2::after{
+        height: 8vh;
+    }
+
     .col-1 #contact::after{
-        content: '';
         width: 10px;
-        height: 14%;
-        background: linear-gradient(#7fffd4, #279e5cb2);
-        position: absolute;
-        left: 5vw;
+        height: 9vh;
+        left: 4vw;
         top: 5px;
+    }
+
+    #contact img {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: 75%;   
     }
 }
