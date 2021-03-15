@@ -201,6 +201,7 @@ nav ul li a:hover{
 #resume-pdf{
     text-align: center;
     padding-bottom: 15vh;
+    display: block;
 }
 
 .projects-page{
