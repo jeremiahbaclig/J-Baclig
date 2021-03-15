@@ -241,6 +241,20 @@ nav ul li a:hover{
     text-align: center;
 }
 
+#projects #table3 {
+    display: inline-flexbox;
+    filter: invert(0.9);
+    mix-blend-mode: luminosity;
+    text-align: center;
+}
+
+#projects #table4 {
+    display: inline-flexbox;
+    filter: invert(0);
+    mix-blend-mode: darken;
+    text-align: center;
+}
+
 .col-2 #projects h2::after{
     content: '';
     width: 10px;
