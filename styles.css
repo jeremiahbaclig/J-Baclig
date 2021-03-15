@@ -17,6 +17,7 @@ html{
     overflow: hidden;
     overflow-y: scroll;
     background-image: linear-gradient(rgba(0, 219, 172, 0.6), rgba(97, 179, 147, 0.397));
+    mix-blend-mode: multiply;   
 }
 
 .navbar{
@@ -24,7 +25,8 @@ html{
     display: flex;
     align-items: center;
     position: fixed;
-    z-index: 2;
+    z-index: 3;
+    mix-blend-mode: luminosity;
 }
 
 .logo{
@@ -107,7 +109,7 @@ nav ul li a:hover{
     height: 64%;
     background: linear-gradient(#7fffd4, #279e5cb2);
     position: absolute;
-    left: -30px;
+    left: -3vw;
     top: 11px;
 }
 
@@ -127,7 +129,7 @@ nav ul li a:hover{
 .col-2 h2::after{
     content: '';
     width: 10px;
-    height: 22%;
+    height: 18%;
     background: linear-gradient(#7fffd4, #279e5cb2);
     position: absolute;
     top: 30px;
@@ -185,25 +187,40 @@ nav ul li a:hover{
 .col-1 #resume::after{
     content: '';
     width: 10px;
-    height: 14%;
+    height: 12%;
     background: linear-gradient(#7fffd4, #279e5cb2);
     position: absolute;
-    left: 130px;
+    left: 5vw;
     top: 11px;
 }
 
 .resume-page{
     background-image: linear-gradient(rgba(0, 219, 172, 0.6), rgba(97, 179, 147, 0.397));
-    margin-bottom: 6vh;
 }
 
 #resume-pdf{
     text-align: center;
+    padding-bottom: 15vh;
 }
 
 .projects-page{
+    padding-top: 10vh;
     background-image: linear-gradient(rgba(97, 179, 147, 0.397), rgba(0, 219, 172, 0.6));
-    margin-bottom: 6vh;
+    padding-bottom: 15vh;
+}
+
+#projects #table1 {
+    display: inline-flexbox;
+    filter: invert(0.9);
+    mix-blend-mode: saturation;
+    text-align: center;
+}
+
+#projects #table2 {
+    display: inline-flexbox;
+    filter: invert(0.9);
+    mix-blend-mode: saturation;
+    text-align: center;
 }
 
 #contact h2{
@@ -218,27 +235,25 @@ nav ul li a:hover{
     height: 14%;
     background: linear-gradient(#7fffd4, #279e5cb2);
     position: absolute;
-    left: 130px;
+    left: 5vw;
     top: 11px;
 }
 
 .contact-page{
+    padding-top: 10vh;
     background-image: linear-gradient(rgba(0, 219, 172, 0.6), rgba(97, 179, 147, 0.397));
-    margin-bottom: 6vh;
+    margin-bottom: 5vh;
 }
 
-#contact a {
-    margin-left: 50vw;
-    text-decoration: none;
-    color: azure;
-    background: rgba(200, 80, 204, 0.562);
-    font-size: 24px;
-    border-radius: 30px;
-    top: 0;
+#contact img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: -8vh;
 }
 
 .socials img{
-    height: 13px;
+    height: 40px;
     margin: 20px;
     cursor: pointer;
 }
@@ -264,7 +279,7 @@ nav ul li a:hover{
         position: absolute;
         top: 75px;
         right: 0;
-        z-index: 2;
+        z-index: 3;
         opacity: 0;
     }
 
@@ -307,7 +322,7 @@ nav ul li a:hover{
 
     .col-2{
         flex-basis: 50%;
-        margin-bottom: 50px;
+        padding-bottom: 50px;
     }
 
     .col-2 h2{
@@ -324,5 +339,15 @@ nav ul li a:hover{
 
     .color-box{
         transform: translateX(75px);
+    }
+    
+    .col-1 #contact::after{
+        content: '';
+        width: 10px;
+        height: 14%;
+        background: linear-gradient(#7fffd4, #279e5cb2);
+        position: absolute;
+        left: 5vw;
+        top: 5px;
     }
 }
