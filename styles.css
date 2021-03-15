@@ -5,7 +5,12 @@
 }
 
 html{
-    scroll-behavior: smooth;
+    overflow-x: hidden;
+}
+
+body{
+    overflow-x: hidden;
+    background-image: linear-gradient(rgba(148, 82, 165, 0.493), rgba(97, 153, 179, 0.445));
 }
 
 .container{
@@ -123,7 +128,7 @@ nav ul li a:hover{
 .col-2 h2{
     font-size: 54px;
     color:rgba(0, 0, 0, 0.705);
-    margin-left: 70vw;
+    margin-left: 65vw;
 }
 
 .col-2 h2::after{
@@ -276,10 +281,10 @@ nav ul li a:hover{
 @media only screen and (max-width:700px){
     nav ul{
         width: 100%;
-        background: linear-gradient(#f868eca4, #1ea593b2);
+        background: linear-gradient(#f868eca4, #79447998);
         position: absolute;
         top: 75px;
-        right: 0;
+        right: auto;
         z-index: 3;
         opacity: 0;
     }
