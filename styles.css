@@ -5,11 +5,11 @@
 }
 
 html{
-    overflow-x: hidden;
+    overflow-x: auto;
 }
 
 body{
-    overflow-x: hidden;
+    overflow-x: auto;
     background-image: linear-gradient(rgba(148, 82, 165, 0.493), rgba(97, 153, 179, 0.445));
 }
 
@@ -19,7 +19,7 @@ body{
     padding-left: 8%;
     padding-right: 8%;
     box-sizing: border-box;
-    overflow: hidden;
+    overflow: auto;
     overflow-y: scroll;
     background-image: linear-gradient(rgba(0, 219, 172, 0.6), rgba(97, 179, 147, 0.397));
     mix-blend-mode: multiply;   
@@ -278,13 +278,13 @@ nav ul li a:hover{
     left:40%;
 }
 
-@media only screen and (max-width:700px){
+@media only screen and (max-width:1150px){
     nav ul{
         width: 100%;
         background: linear-gradient(#f868eca4, #79447998);
         position: absolute;
         top: 75px;
-        right: auto;
+        right: 7vw;
         z-index: 3;
         opacity: 0;
     }
@@ -293,6 +293,8 @@ nav ul li a:hover{
         display: block;
         margin-top: 5px;
         margin-bottom: 7px;
+        z-index: 5;
+        overflow: hidden;
     }
 
     nav ul li a {
@@ -305,7 +307,7 @@ nav ul li a:hover{
     }
 
     #menuList{
-        overflow: hidden;
+        overflow: auto;
         transition: 0.5s;
     }
 
