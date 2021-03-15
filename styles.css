@@ -318,7 +318,7 @@ nav ul li a:hover{
 @media only screen and (max-width:1150px){
     nav ul{
         width: 100%;
-        background: linear-gradient(#f868eca4, #79447998);
+        background: linear-gradient(#f868eca4, #24132498);
         position: absolute;
         top: 75px;
         right: 7vw;
@@ -335,8 +335,20 @@ nav ul li a:hover{
     }
 
     nav ul li a {
-        color:azure;
+        color:black;
         background: none;
+        font-weight: bolder;
+    }
+
+    .navbar{
+        background-color: honeydew;
+        opacity: 50%;
+        top: 0px;
+    }
+
+    .logo{
+        margin-top: auto;
+        mix-blend-mode: difference;
     }
 
     .menu-icon{
