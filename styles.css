@@ -155,8 +155,9 @@ nav ul li a:hover{
 }
 
 #about {
+    padding-top: 15vh;
     margin-top: 6vh;
-    margin-bottom: 15vh;
+    margin-bottom: 40vh;
 }
 
 .col-2 #about h2::after{
@@ -165,7 +166,7 @@ nav ul li a:hover{
     height: 9vh;
     background: linear-gradient(#7fffd4, #279e5cb2);
     position: absolute;
-    top: 6vh;
+    top: 21vh;
     margin-left: 3vw;
     z-index: 2;
 }
@@ -207,6 +208,7 @@ nav ul li a:hover{
     position: absolute;
     left: 4vw;
     top: 0vh;
+    z-index: 2;
 }
 
 .resume-page{
@@ -215,14 +217,14 @@ nav ul li a:hover{
 
 #resume-pdf{
     text-align: center;
-    padding-bottom: 15vh;
+    padding-bottom: 30vh;
     display: block;
 }
 
 .projects-page{
     padding-top: 10vh;
     background-image: linear-gradient(rgba(97, 179, 147, 0.397), rgba(0, 219, 172, 0.6));
-    padding-bottom: 15vh;
+    padding-bottom: 30vh;
 }
 
 #projects #table1 {
@@ -339,7 +341,6 @@ nav ul li a:hover{
 
     .col-1{
         flex-basis: 100%;
-        margin-top: -10vh;
     }
 
     .col-1 h2{
@@ -354,9 +355,13 @@ nav ul li a:hover{
         mix-blend-mode: multiply;
     }
 
+    .col-1 #name {
+        margin-top: -10vh;
+    }
+
     .col-2{
         flex-basis: 50%;
-        padding-bottom: 50px;
+        padding-bottom: 10vh;
     }
 
     .col-2 h2{
@@ -380,8 +385,12 @@ nav ul li a:hover{
         margin-top: 5vh;
     }
     
+    #projects {
+        overflow-x: hidden;
+    }
+
     .col-1 #name::after{
-        top: 0px;
+        top: -10vh;
         left: -5vw;
     }
 
