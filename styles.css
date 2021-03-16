@@ -71,7 +71,7 @@ nav ul li a{
     text-decoration: none;
     color: azure;
     background: rgba(0, 116, 96, 0.562);
-    font-size: 14px;
+    font-size: 16px;
     padding: 10px 15px;
     border-radius: 10px;
     transition: 0.5s ease-in-out;
@@ -369,8 +369,8 @@ nav ul li a:hover{
         width: 100%;
         background: linear-gradient(#f868eca4, #24132498);
         position: absolute;
-        top: 75px;
-        right: 7vw;
+        top: 12vh;
+        right: 0;
         z-index: 3;
         opacity: 0;
     }
@@ -387,8 +387,8 @@ nav ul li a:hover{
         color:black;
         background: none;
         font-weight: bolder;
-        mix-blend-mode: luminosity;
-        filter: invert(0.9);
+        mix-blend-mode: hard-light;
+        filter: invert(1);
     }
 
     .navbar{
