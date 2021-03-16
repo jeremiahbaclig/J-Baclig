@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles.css">
     <script type="text/javascript" src="script.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <title>Jeremiah Baclig's Contact Site</title>
     <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
@@ -13,7 +14,6 @@
     <link rel="manifest" href="/site.webmanifest">
 </head>
 <body>
-
     <div class="navbar">
         <a href="#Home"><img src="media/logo.png" class="logo" alt="Jeremiah Baclig" title="Jeremiah Baclig"></a>
         <nav>
@@ -32,7 +32,7 @@
         <a name="Home"></a>
         <div class="row">
             <div class="col-1">
-                <section id="name">
+                <section id="name" class="animation-element from-left">
                     <h2>Jeremiah Baclig</h2>
                     <h3>Software Developer</h3>
                     <p>B.S. in C.S. from UNF - Spring 2021</p>
@@ -49,7 +49,7 @@
     <a name="About"></a>
     <div class="about-page">
         <div class="col-2">
-            <section id="about">
+            <section id="about" class="animation-element from-right">
                 <h2>About</h2>
                 <h3>Set to graduate with a Bachelor of Science in Computer Science
                     from the University of North Florida in April 2021. I'm currently
@@ -63,11 +63,10 @@
     <a name="Resume"></a>
     <div class="resume-page">
         <div class="col-1">
-            <section id="resume">
+            <section id="resume" class="animation-element from-left">
                 <h2>Resume</h2>
                 <div id="resume-pdf">
-                    <iframe src="https://drive.google.com/file/d/17Ek1317BvRHOcyjqVSbd0y1H4R2x9J9Y/preview" width="80%" height="500"></iframe>
-                </div>
+                    <iframe src="https://drive.google.com/file/d/1Pm4TKMKRC3XpAx1GYLPeR445YpGI2jWZ/preview" width="80%" height="500"></iframe>                </div>
             </section>
         </div>
     </div>
@@ -75,29 +74,28 @@
     <a name="Projects"></a>
     <div class="projects-page">
         <div class="col-2">
-            <section id="projects">
-                <h2>Projects</h2>
-                <div id="table1">
-                    <object type="image/svg+xml" rel="noreferrer noopener" data="https://gh-card.dev/repos/jeremiahbaclig/J-Baclig.svg?link_target=_blank"></object>
-
-                </div>
-                <div id="table2">
-                    <object type="image/svg+xml" rel="noreferrer noopener" data="https://gh-card.dev/repos/jeremiahbaclig/Stock-Simple-Visualizer.svg?link_target=_blank"></object>
-                </div>
-                <div id="table3">
-                    <object type="image/svg+xml" rel="noreferrer noopener" data="https://gh-card.dev/repos/jeremiahbaclig/Twitter-Bot.svg?link_target=_blank"></object>
-                </div>
-                <div id="table4">
-                    <object type="image/svg+xml" rel="noreferrer noopener" data="https://gh-card.dev/repos/jeremiahbaclig/A-Star_FinalProj.svg?link_target=_blank"></object>
-                </div>
-            </section>
+                <section id="projects" class="animation-element from-right">
+                    <h2>Projects</h2>
+                    <div id="table1">
+                        <object type="image/svg+xml" rel="noreferrer noopener" data="https://gh-card.dev/repos/jeremiahbaclig/J-Baclig.svg?link_target=_blank"></object>
+                    </div>
+                    <div id="table2">
+                        <object type="image/svg+xml" rel="noreferrer noopener" data="https://gh-card.dev/repos/jeremiahbaclig/Stock-Simple-Visualizer.svg?link_target=_blank"></object>
+                    </div>
+                    <div id="table3">
+                        <object type="image/svg+xml" rel="noreferrer noopener" data="https://gh-card.dev/repos/jeremiahbaclig/Twitter-Bot.svg?link_target=_blank"></object>
+                    </div>
+                    <div id="table4">
+                        <object type="image/svg+xml" rel="noreferrer noopener" data="https://gh-card.dev/repos/jeremiahbaclig/A-Star_FinalProj.svg?link_target=_blank"></object>
+                    </div>
+                </section>
         </div>
     </div>
 
     <a name="Contact"></a>
     <div class="contact-page">
         <div class="col-1">
-            <section id="contact">
+            <section id="contact" class="animation-element from-left">
                 <h2>Contact</h2>
                 <a href="mailto:jeremiahbaclig@gmail.com"><img src="media/email.gif" alt="spinny email boi" title="Spinning Email me!"></a> 
             </section>
@@ -105,9 +103,15 @@
     </div>
 
     <div class="socials">
-        <a href="https://github.com/jeremiahbaclig" target="_blank" rel="noreferrer noopener"><img src="media/github.png" alt="Github logo credit: flaticon.com" title="Github logo"></a>
-        <a href="https://www.linkedin.com/in/jeremiah-baclig/" target="_blank" rel="noreferrer noopener"><img src="media/linkedin.png" alt="Linkedin logo credit: flaticon.com" title="Linkedin logo"></a>
-        <a href="https://twitter.com/do_ming0" target="_blank" rel="noreferrer noopener"><img src="media/twitter.png" alt="Twitter logo credit: flaticon.com" title="Twitter logo"></a>
+        <span class="animation-element from-left">
+            <a href="https://github.com/jeremiahbaclig" target="_blank" rel="noreferrer noopener"><img src="media/github.png" alt="Github logo credit: flaticon.com" title="Github logo"></a>
+        </span>
+        <span class="animation-element from-right">
+            <a href="https://www.linkedin.com/in/jeremiah-baclig/" target="_blank" rel="noreferrer noopener"><img src="media/linkedin.png" alt="Linkedin logo credit: flaticon.com" title="Linkedin logo"></a>
+        </span>
+        <span class="animation-element from-right">
+            <a href="https://twitter.com/do_ming0" target="_blank" rel="noreferrer noopener"><img src="media/twitter.png" alt="Twitter logo credit: flaticon.com" title="Twitter logo"></a>
+        </span>
     </div>
 
     <script>checkDesktop()</script>
